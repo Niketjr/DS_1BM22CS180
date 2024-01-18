@@ -45,7 +45,6 @@ void delete(int pos){
     struct node *p, *p1;
     p = (struct node*)malloc(sizeof(struct node));
     p = head;
-
     for(int i=0;i<pos-1;i++){
         p = p->next;
     }
