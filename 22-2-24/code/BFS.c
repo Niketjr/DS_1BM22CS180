@@ -24,6 +24,7 @@ Graph* Graph_create(int V)
 void Graph_addEdge(Graph* g, int v, int w)
 {
 	g->adj[v][w] = true;
+	g->adj[w][v] = true;
 }
 void Graph_BFS(Graph* g, int s)
 {
