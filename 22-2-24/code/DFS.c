@@ -14,8 +14,9 @@ void Add_edge(int u, int v){
 bool is_connected(int n){
     for(int i=1; i<=n; i++){
         vis[i] = false;
+        dfs(i,n);
     }
-    dfs(1,n);
+    
     for(int i=1; i<=n; i++){
         if(!vis[i])
             return false;
